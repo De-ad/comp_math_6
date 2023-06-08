@@ -9,9 +9,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class UserDataRequest {
     int functionNumber;
-    double initialCondition;
-    double rightEdge;
-    double leftEdge;
+    double y0;
+    double x0;
+    double xn;
     double h;
     double eps;
 

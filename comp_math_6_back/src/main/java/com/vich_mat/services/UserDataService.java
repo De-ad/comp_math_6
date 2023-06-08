@@ -21,11 +21,11 @@ public class UserDataService {
     MilnMethod milnMethod;
 
     public Result calculate(@RequestBody UserDataRequest request) {
-        UserData userData = new UserData(request.getFunctionNumber(), request.getInitialCondition(), request.getRightEdge(),
-                request.getLeftEdge(), request.getH(), request.getEps());
+        UserData userData = new UserData(request.getFunctionNumber(), request.getY0(), request.getX0(),
+                request.getXn(), request.getH(), request.getEps());
+        userData.fillXArray();
         Result result = new Result();
         eulerMethod.calculate(userData, result);
-
         return result;
     }
 }

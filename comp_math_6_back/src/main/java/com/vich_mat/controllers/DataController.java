@@ -18,13 +18,13 @@ public class DataController {
 
     @PostMapping(value = "/calculate")
     public ResponseEntity<Object> getData(@RequestBody UserDataRequest userDataRequest){
-        try{
+//        try{
             return ResponseEntity.ok(userDataService.calculate(userDataRequest));
-        }
-        catch (Exception e){
-            System.out.println(e.getMessage());
-            return ResponseEntity.badRequest().body(new ErrorResponse("unknown exception in controller"));
-        }
+//        }
+//        catch (Exception e){
+//            System.out.println(e.getMessage());
+//            return ResponseEntity.badRequest().body(new ErrorResponse("unknown exception in controller"));
+//        }
 
     }
 

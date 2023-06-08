@@ -42,8 +42,6 @@ public class EulerMethod {
 
         result.setEulerF(fArray);
         result.setEulerY(yArray);
-        System.out.println(yArray);
-        System.out.println(fArray);
     }
 
 

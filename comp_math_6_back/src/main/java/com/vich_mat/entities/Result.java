@@ -16,7 +16,8 @@ public class Result {
 
     ArrayList<Double> eulerF;
     ArrayList<Double> eulerY;
-    ArrayList<Double> modifiedEuler;
+    ArrayList<Double> modifiedEulerY;
+    ArrayList<Double> modifiedEulerF;
     ArrayList<Double> miln;
 
 }

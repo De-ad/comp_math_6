@@ -26,6 +26,7 @@ public class UserDataService {
         userData.fillXArray();
         Result result = new Result();
         eulerMethod.calculate(userData, result);
+        modifiedEulerMethod.calculate(userData, result);
         return result;
     }
 }

@@ -12,7 +12,7 @@ public class UserDataRequest {
     double initialCondition;
     double rightEdge;
     double leftEdge;
-    double step;
-    double accuracy;
+    double h;
+    double eps;
 
 }

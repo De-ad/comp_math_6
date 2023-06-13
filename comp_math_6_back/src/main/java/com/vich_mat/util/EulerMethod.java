@@ -3,6 +3,7 @@ package com.vich_mat.util;
 
 import com.vich_mat.entities.Result;
 import com.vich_mat.entities.UserData;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 
 
 @Component
+@Setter
 public class EulerMethod {
 
 
@@ -35,7 +37,6 @@ public class EulerMethod {
         fArray.add(f0);
 
         for (int i = 0; i < xArray.size() - 1; i++){
-
             yArray.add(calculateNextY(yArray.get(i), fArray.get(i)));
             fArray.add(userData.calculateFunction(functionNum, xArray.get(i+1), yArray.get(i+1)));
         }

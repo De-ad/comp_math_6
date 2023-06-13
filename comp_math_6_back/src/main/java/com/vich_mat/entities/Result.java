@@ -18,6 +18,11 @@ public class Result {
     ArrayList<Double> eulerY;
     ArrayList<Double> modifiedEulerY;
     ArrayList<Double> modifiedEulerF;
-    ArrayList<Double> miln;
+    ArrayList<Double> milnY;
+    ArrayList<Double> milnF;
+
+    ArrayList<Double> accurate;
+
+    ArrayList<Double> xArray;
 
 }

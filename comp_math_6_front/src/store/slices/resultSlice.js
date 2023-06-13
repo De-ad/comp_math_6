@@ -1,17 +1,17 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-import {sendDots} from "../../services/dataService";
+import {sendData} from "../../services/dataService";
 
 export const getResult = createAsyncThunk(
     "result/getResult",
     // you can pass only one arg to createAsyncThunk, tricky moment
     async (data) => {
         try{
-            const {dots, argument} = data;
-            const res = await sendDots(dots, argument);
+            const {functionNumber, y0, x0, xn, h, eps} = data;
+            const res = await sendData(functionNumber, y0, x0, xn, h, eps);
             return res.data;
         }
         catch (error){
-            console.log(error)
+            console.log(error);
         }
 
     }
